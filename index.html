@@ -24,8 +24,8 @@
         <div class="absolute inset-0 bg-black opacity-30 h-[600px]"></div>
         <div class="relative z-10">
             <nav id="navbar" class="w-full px-4 sm:px-6 lg:px-8 fixed top-0 transition-all duration-300">
-                <div class="flex justify-between">
-                    <div class="flex-shrink-0 flex items-center">
+                <div class="flex justify-between flex-wrap">
+                    <div class="flex-shrink-0 flex items-center w-1/2 lg:w-1/3">
                         <a href="#">
                             <img class="h-24 w-auto"
                                 src="https://cdn-jjjpp.nitrocdn.com/XxrMpBqaaQbLjkQsoyKRlFZkYwXzVrPR/assets/images/optimized/rev-c0588ff/fimis.id/wp-content/uploads/2023/07/logo_al_fitrah-new.png"
@@ -33,21 +33,31 @@
                         </a>
                     </div>
 
+                    <button id="menu-toggle" class="lg:hidden text-white text-2xl w-1/2 flex justify-end items-center">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
                     <!-- Menu Items -->
-                    <div class="flex items-center space-x-8">
-                        <a href="#home" class="text-white hover:text-orange-300 font-bold text-2xl">Home</a>
-                        <a href="#about" class="text-white hover:text-orange-300 font-bold text-2xl">About</a>
-                        <a href="#program" class="text-white hover:text-orange-300 font-bold text-2xl">Program</a>
-                        <a href="#fasilitas" class="text-white hover:text-orange-300 font-bold text-2xl">Fasilitas</a>
-                        <a href="#biaya" class="text-white hover:text-orange-300 font-bold text-2xl">Biaya</a>
-                        <a href="#blog" class="text-white hover:text-orange-300 font-bold text-2xl">Blog</a>
+                    <div id="menu"
+                        class="hidden lg:flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-0 lg:space-x-8 items-center">
+                        <a href="#home" class="text-white hover:text-orange-300 font-bold text-lg xl:text-xl">Home</a>
+                        <a href="#about" class="text-white hover:text-orange-300 font-bold text-lg xl:text-xl">About</a>
+                        <a href="#program"
+                            class="text-white hover:text-orange-300 font-bold text-lg xl:text-xl">Program</a>
+                        <a href="#fasilitas"
+                            class="text-white hover:text-orange-300 font-bold text-lg xl:text-xl">Fasilitas</a>
+                        <a href="#biaya" class="text-white hover:text-orange-300 font-bold text-lg xl:text-xl">Biaya</a>
+                        <a href="#blog" class="text-white hover:text-orange-300 font-bold text-lg xl:text-xl">Blog</a>
+                        <a href="#"><button
+                                class="text-white px-3 py-2 rounded-md bg-alfitrah1 font-bold text-lg xl:text-xl">Daftar</button></a>
                     </div>
                 </div>
             </nav>
 
             <div id="jumbotron" class="flex justify-center items-center h-[600px] flex-col gap-4">
-                <h1 class="text-7xl font-bold text-white">Al Fitrah Boarding School</h1>
-                <p class="text-gray-300">Mendidik Generasi Rabbani yang Unggul, Talented, Berkualitas dan ber Akhlak
+                <h1 class="text-3xl md:text-7xl font-bold text-white text-center">Al Fitrah Boarding School</h1>
+                <p class="text-gray-300 text-center">Mendidik Generasi Rabbani yang Unggul, Talented, Berkualitas dan
+                    ber Akhlak
                     Mulia</p>
             </div>
         </div>
@@ -60,8 +70,8 @@
                 <h2 class="text-4xl font-bold">About</h2>
                 <div class="flex-grow border-t border-gray-400"></div>
             </div>
-            <div class="flex justify-between items-center">
-                <div class="w-3/5 text-justify h-[400px]">
+            <div class="flex flex-col lg:flex-row justify-between items-center">
+                <div class="lg:w-3/5 text-justify lg:h-[400px] order-2 lg:order-1">
                     <p class="mb-4"><b>Al Fitrah Boarding School</b> adalah lembaga pendidikan khusus bagi perempuan
                         yang berfokus pada pembelajaran agama Islam yang berlandaskan prinsip-prinsip <b>Ahlussunnah wal
                             Jamaah</b>. Pesantren ini memberikan perhatian utama pada pengajaran akidah, ibadah, dan
@@ -86,8 +96,8 @@
                         masyarakat. Dengan kurikulum yang terpadu antara ilmu agama dan pengembangan karakter, Al Fitrah
                         Boarding School berupaya mencetak generasi muslimah yang berkualitas dan berdaya saing</p>
                 </div>
-                <div class="w-2/5 h-[600px]">
-                    <img src="image/image1.jpg" alt="alfitrah">
+                <div class="lg:w-2/5 lg:h-[600px] order-1 lg:order-2">
+                    <img src="image/image1.jpg" alt="alfitrah" class="md:h-[450px]">
                 </div>
             </div>
         </div>
@@ -100,22 +110,22 @@
                 <h2 class="text-4xl font-bold text-white">Program</h2>
                 <div class="flex-grow border-t border-alfitrah2"></div>
             </div>
-            <div class="flex justify-between mt-10">
-                <a href="#smp" class="w-[30%]">
+            <div class="flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between mt-10">
+                <a href="#smp" class="lg:w-[30%]">
                     <div
                         class="py-14 shadow-2xl flex flex-col gap-6 items-center bg-white hover:bg-alfitrah2 hover:text-white rounded-md">
                         <i class="fa-solid fa-book-open-reader text-6xl"></i>
                         <h3 class="text-3xl font-bold">SMP Tahfidz Putri</h3>
                     </div>
                 </a>
-                <a href="#sma" class="w-[30%]">
+                <a href="#sma" class="lg:w-[30%]">
                     <div
                         class="py-14 shadow-2xl flex flex-col gap-6 items-center bg-white hover:bg-alfitrah2 hover:text-white rounded-md">
                         <i class="fa-solid fa-book-open text-6xl"></i>
                         <h3 class="text-3xl font-bold">SMA Tahfidz Putri</h3>
                     </div>
                 </a>
-                <a href="#s1" class="w-[30%]">
+                <a href="#s1" class="lg:w-[30%]">
                     <div
                         class="py-14 shadow-2xl flex flex-col gap-6 items-center bg-white hover:bg-alfitrah2 hover:text-white rounded-md">
                         <i class="fa-solid fa-graduation-cap text-6xl"></i>
@@ -128,11 +138,11 @@
 
     <div class="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div id="smp" class="py-10 scroll-mt-28">
-            <div class="flex justify-between gap-10">
-                <div class="w-2/5 h-[600px]">
+            <div class="flex flex-col lg:flex-row justify-between gap-10">
+                <div class="lg:w-2/5 lg:h-[600px] order-2 lg:order-1">
                     <img src="image/gmbr1.jpg" alt="smp-alfitrah">
                 </div>
-                <div class="w-3/5 text-justify h-[400px]">
+                <div class="lg:w-3/5 text-justify xl:h-[400px] order-1 lg:order-2">
                     <h2 class="font-bold text-3xl mb-8">SMP Tahfidz Putri</h2>
                     <p class="mb-4 text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt nam quod
                         illo a
@@ -157,8 +167,8 @@
             </div>
         </div>
         <div id="sma" class="my-10 scroll-mt-28">
-            <div class="flex justify-between gap-10">
-                <div class="w-3/5 text-justify h-[400px]">
+            <div class="flex flex-col lg:flex-row justify-between gap-10">
+                <div class="lg:w-3/5 text-justify xl:h-[400px]">
                     <h2 class="font-bold text-3xl mb-8">SMA Tahfidz Putri</h2>
                     <p class="mb-4 text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt nam quod
                         illo a
@@ -181,17 +191,17 @@
                         harum! Possimus laboriosam minima modi voluptatem eaque.</p>
                 </div>
 
-                <div class="w-2/5 h-[600px]">
+                <div class="lg:w-2/5 lg:h-[600px]">
                     <img src="image/gmbr2.jpg" alt="sma-alfitrah">
                 </div>
             </div>
 
             <div id="s1" class="my-20">
-                <div class="flex justify-between gap-10">
-                    <div class="w-2/5 h-[600px]">
+                <div class="flex flex-col lg:flex-row justify-between gap-10">
+                    <div class="lg:w-2/5 lg:h-[600px] order-2 lg:order-1">
                         <img src="image/gmbr3.jpeg" alt="s1-alfitrah">
                     </div>
-                    <div class="w-3/5 text-justify h-[400px]">
+                    <div class="lg:w-3/5 text-justify xl:h-[400px] order-1 lg:order-2">
                         <h2 class="font-bold text-3xl mb-8">Beasiswa S1</h2>
                         <p class="mb-4 text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt nam
                             quod
@@ -324,34 +334,45 @@
             </div>
         </div>
         <div>
-            <table class="table-auto w-full border-collapse border border-gray-300 text-sm">
-                <thead>
-                    <tr class="bg-alfitrah2">
-                        <th class="border border-gray-300 px-4 py-2 text-white text-xl">Jenjang</th>
-                        <th class="border border-gray-300 px-4 py-2 text-white text-xl">Pendaftaran</th>
-                        <th class="border border-gray-300 px-4 py-2 text-white text-xl">Uang Masuk</th>
-                        <th class="border border-gray-300 px-4 py-2 text-white text-xl">Daftar Ulang</th>
-                        <th class="border border-gray-300 px-4 py-2 text-white text-xl">SPP Bulanan</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="bg-slate-300">
-                        <td class="border border-gray-300 px-4 py-2 text-lg text-center">SMP</td>
-                        <td class="border border-gray-300 px-4 py-2 text-lg text-center">Rp 450.000</td>
-                        <td class="border border-gray-300 px-4 py-2 text-lg text-center">Rp 16.000.000</td>
-                        <td class="border border-gray-300 px-4 py-2 text-lg text-center">Rp 3.000.000</td>
-                        <td class="border border-gray-300 px-4 py-2 text-lg text-center">Rp 2.000.000</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-gray-300 px-4 py-2 text-lg text-center">SMA</td>
-                        <td class="border border-gray-300 px-4 py-2 text-lg text-center">Rp 450.000</td>
-                        <td class="border border-gray-300 px-4 py-2 text-lg text-center">Rp 16.000.000</td>
-                        <td class="border border-gray-300 px-4 py-2 text-lg text-center">Rp 3.000.000</td>
-                        <td class="border border-gray-300 px-4 py-2 text-lg text-center">Rp 2.000.000</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="overflow-x-auto">
+                <table class="table-auto w-full border-collapse border border-gray-300 text-sm">
+                    <thead>
+                        <tr class="bg-alfitrah2">
+                            <th class="border border-gray-300 px-4 py-2 text-white text-lg md:text-xl">Jenjang</th>
+                            <th class="border border-gray-300 px-4 py-2 text-white text-lg md:text-xl">Pendaftaran</th>
+                            <th class="border border-gray-300 px-4 py-2 text-white text-lg md:text-xl">Uang Masuk</th>
+                            <th class="border border-gray-300 px-4 py-2 text-white text-lg md:text-xl">Daftar Ulang</th>
+                            <th class="border border-gray-300 px-4 py-2 text-white text-lg md:text-xl">SPP Bulanan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-slate-300">
+                            <td class="border border-gray-300 px-4 py-2 text-base md:text-lg text-center">SMP</td>
+                            <td class="border border-gray-300 px-4 py-2 text-base md:text-lg text-center">Rp 450.000
+                            </td>
+                            <td class="border border-gray-300 px-4 py-2 text-base md:text-lg text-center">Rp 16.000.000
+                            </td>
+                            <td class="border border-gray-300 px-4 py-2 text-base md:text-lg text-center">Rp 3.000.000
+                            </td>
+                            <td class="border border-gray-300 px-4 py-2 text-base md:text-lg text-center">Rp 2.000.000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2 text-base md:text-lg text-center">SMA</td>
+                            <td class="border border-gray-300 px-4 py-2 text-base md:text-lg text-center">Rp 450.000
+                            </td>
+                            <td class="border border-gray-300 px-4 py-2 text-base md:text-lg text-center">Rp 16.000.000
+                            </td>
+                            <td class="border border-gray-300 px-4 py-2 text-base md:text-lg text-center">Rp 3.000.000
+                            </td>
+                            <td class="border border-gray-300 px-4 py-2 text-base md:text-lg text-center">Rp 2.000.000
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
+            <p class="text-red-500 block md:hidden mt-4 text-sm">* Geser tabel untuk melihat lebih detail</p>
             <p class="text-red-500 mt-4 text-sm">* Apabila mengundurkan diri, uang tidak dapat dikembalikan</p>
 
             <div class="mt-6">
@@ -388,8 +409,9 @@
         <div class="absolute inset-0 bg-alfitrah2 opacity-30 h-[300px]">
         </div>
         <div class="relative flex flex-col justify-center items-center z-[1] gap-4 h-[300px]">
-            <h2 class="text-2xl font-bold text-white">Segera Daftarkan Putra Anda Sekarang</h2>
-            <p class="text-lg text-gray-300 w-1/2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <h2 class="text-2xl font-bold text-white text-center">Segera Daftarkan Putra Anda Sekarang</h2>
+            <p class="text-lg text-gray-300 md:w-1/2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
                 Mollitia
                 voluptatum aliquid porro rem libero consequuntur quo impedit doloribus.</p>
             <a href="#"><button
@@ -406,11 +428,11 @@
                 <div class="flex-grow border-t border-gray-400"></div>
             </div>
         </div>
-        <div class="flex justify-between h-[36rem] gap-8">
-            <a href="#" class="w-2/5 p-3 block transition-shadow duration-300 hover:shadow-lg hover:shadow-gray-400">
+        <div class="flex flex-col lg:flex-row justify-between xl:h-[36rem] gap-8">
+            <a href="#" class="lg:w-2/5 p-3 block transition-shadow duration-300 hover:shadow-lg hover:shadow-gray-400">
                 <div class="relative overflow-hidden">
                     <img src="https://rumaysho.com/wp-content/uploads/2024/11/syarat_meraih_surga_cinta_takut_amal_rumaysho-390x220.jpg"
-                        alt="" class="w-full h-80 rounded-md">
+                        alt="" class="w-full lg:h-80 rounded-md">
                     <p
                         class="bg-white opacity-50 p-2 rounded-md absolute top-4 right-4 inline-block text-alfitrah2 text-sm">
                         1 jam yang lalu</p>
@@ -430,17 +452,17 @@
                 </p>
             </a>
 
-            <div class="w-3/5 flex flex-col justify-between gap-10">
+            <div class="lg:w-3/5 flex flex-col justify-between gap-10">
                 <a href="#"
-                    class="h-1/2 flex justify-between p-3 transition-shadow duration-300 hover:shadow-lg hover:shadow-gray-400">
-                    <div class="w-[39%] relative overflow-hidden">
+                    class="h-1/2 flex flex-col lg:flex-row justify-between p-3 transition-shadow duration-300 hover:shadow-lg hover:shadow-gray-400">
+                    <div class="lg:w-[39%] relative overflow-hidden">
                         <img src="https://rumaysho.com/wp-content/uploads/2024/11/syarat_meraih_surga_cinta_takut_amal_rumaysho-390x220.jpg"
-                            alt="" class="h-[100%] rounded-md">
+                            alt="" class="h-[100%] md:w-full rounded-md">
                         <p
                             class="bg-white opacity-50 p-2 absolute top-4 right-4 rounded-md inline-block text-alfitrah2">
                             1 jam yang lalu</p>
                     </div>
-                    <div class="w-3/5">
+                    <div class="lg:w-3/5">
                         <div class="flex justify-between">
                             <p class="text-lg font-bold text-gray-600">Belajar Islam</p>
                             <p class="text-lg text-gray-500">10 Nov 2024</p>
@@ -454,15 +476,15 @@
                     </div>
                 </a>
                 <a href="#"
-                    class="h-1/2 flex justify-between p-3 transition-shadow duration-300 hover:shadow-lg hover:shadow-gray-400">
-                    <div class="w-[39%] relative overflow-hidden">
+                    class="h-1/2 flex flex-col lg:flex-row justify-between p-3 transition-shadow duration-300 hover:shadow-lg hover:shadow-gray-400">
+                    <div class="lg:w-[39%] relative overflow-hidden">
                         <img src="https://rumaysho.com/wp-content/uploads/2024/11/syarat_meraih_surga_cinta_takut_amal_rumaysho-390x220.jpg"
-                            alt="" class="h-[100%] rounded-md">
+                            alt="" class="h-[100%] w-full rounded-md">
                         <p
                             class="bg-white opacity-50 p-2 absolute top-4 right-4 rounded-md inline-block text-alfitrah2">
                             1 jam yang lalu</p>
                     </div>
-                    <div class="w-3/5">
+                    <div class="lg:w-3/5">
                         <div class="flex justify-between">
                             <p class="text-lg font-bold text-gray-600">Belajar Islam</p>
                             <p class="text-lg text-gray-500">10 Nov 2024</p>
@@ -480,8 +502,9 @@
     </div>
 
     <footer class="w-full bg-alfitrah2 px-4 sm:px-6 lg:px-8 py-8 mt-10">
-        <div class="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8 flex justify-between text-white pb-10 border-b-2">
-            <div class="w-[30%] flex flex-col gap-3">
+        <div
+            class="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-10 md:gap-0 justify-between text-white pb-10 border-b-2">
+            <div class="md:w-[30%] flex flex-col gap-3">
                 <h2 class="font-bold text-2xl mb-3">Kontak :</h2>
                 <a class="flex gap-4 items-center"
                     href="https://api.whatsapp.com/send?phone=6282110000173&text=Assalamualaikum%20,%20Mohon%20info%20tentang%20pendaftaran">
@@ -498,7 +521,7 @@
                     <p class="text-lg">info@fimis.id</p>
                 </a>
             </div>
-            <div class="w-[30%] flex flex-col gap-3">
+            <div class="md:w-[30%] flex flex-col gap-3">
                 <h2 class="font-bold text-2xl mb-3">Media Sosial :</h2>
                 <a class="flex gap-4" href="https://www.facebook.com/fimisputri/">
                     <i class="fa-brands fa-square-facebook text-lg"></i>
@@ -513,7 +536,7 @@
                     <p class="text-lg">AL FITRAH IBS JONGGOL</p>
                 </a>
             </div>
-            <div class="w-[30%] flex flex-col gap-3 items-center">
+            <div class="md:w-[30%] flex flex-col gap-3">
                 <h2 class="font-bold text-2xl mb-3">Alamat :</h2>
                 <a class="flex gap-4" href="https://g.page/smp-fimis-1?share">
                     <i class="fa-solid fa-location-dot text-lg"></i>

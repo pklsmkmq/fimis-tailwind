@@ -12,6 +12,9 @@ module.exports = {
       colors: {
         'alfitrah1': '#e8891c',
         'alfitrah2': '#174867'
+      },
+      boxShadow: {
+        'login': 'inset 1px 1px 8px 2px white'
       }
     },
   },

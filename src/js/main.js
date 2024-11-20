@@ -1,10 +1,33 @@
+var xstatus = true;
+const navbar = document.getElementById("navbar");
+var nv = false;
 document.addEventListener("scroll", () => {
-    const navbar = document.getElementById("navbar");
-
     if (window.scrollY > 50) {
         navbar.classList.add("bg-black", "shadow-lg");
+        nv = true;
     } else {
-        navbar.classList.remove("bg-black", "shadow-lg");
+        navbar.classList.remove("bg-black", "shadow-lg", "pb-3");
+        nv = false;
+    }
+});
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+    if (xstatus) {
+        // if (nv == false) {
+        navbar.classList.add("bg-black", "shadow-lg", "pb-3");
+        // }
+        menu.classList.remove("hidden");
+        menu.classList.add("flex", "grow", "basis-auto");
+        xstatus = false;
+    } else {
+        if (nv == false) {
+            navbar.classList.remove("bg-black", "shadow-lg", "pb-3");
+        }
+        menu.classList.remove("flex", "grow", "basis-auto");
+        menu.classList.add("hidden");
+        xstatus = true;
     }
 });
 
